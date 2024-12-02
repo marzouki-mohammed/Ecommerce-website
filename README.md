@@ -2,7 +2,10 @@
 
 Bienvenue sur le projet de site e-commerce dédié aux produits traditionnels marocains. Ce site met en valeur l'artisanat marocain et permet aux utilisateurs d'explorer et d'acheter des produits uniques, tels que des tajines, des céramiques, des tapis berbères, et bien plus encore.
 
+---
+
 ## Fonctionnalités principales qui peut effectuer par un utilisateur de site.
+---
 - **Inscription :** Les clients peuvent créer un compte pour accéder aux services du site.
 - **Consulter les produits et les catégories :** Les clients peuvent parcourir les catégories et voir les produits disponibles dans chaque catégorie.
 - **Consulter les détails des produits :** Les clients peuvent afficher les détails des produits, tels que les descriptions, les prix, les images, et les avis.
@@ -12,8 +15,8 @@ Bienvenue sur le projet de site e-commerce dédié aux produits traditionnels ma
 - **Effectuer des commandes :** Les clients peuvent finaliser leurs achats en passant une commande.
 - **Suivre la commande :** Après avoir passé une commande, les clients peuvent suivre son statut (par exemple, en cours, expédiée, livrée).
 - **Obtenir un ticket :** Les clients peuvent recevoir un ticket ou une confirmation pour leurs commandes, souvent utilisé comme preuve d'achat.
-  # E-commerce Management System - Fonctionnalités des Administrateurs
-
+---
+## E-commerce Management System - Fonctionnalités des Administrateurs
 Ce document détaille les fonctionnalités disponibles pour les administrateurs dans le système de gestion e-commerce.
 
 ---
@@ -28,7 +31,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
   - Attribuer un rôle spécifique à un administrateur.
 - **Affichage de tous les admins** : Voir la liste complète des administrateurs.
 
----
+
 
 ## Gestion des Produits
 
@@ -42,7 +45,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
   - Afficher le top des produits populaires du mois.
 - **Affichage de tous les produits** : Voir la liste complète des produits disponibles.
 
----
+
 
 ## Gestion des Commandes
 
@@ -53,7 +56,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
   - Supprimer des expéditeurs existants.
 - **Livraison des commandes** : Suivre et gérer les livraisons des commandes.
 
----
+
 
 ## Gestion des Catégories
 
@@ -64,7 +67,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
   - Distribution des produits par catégorie.
 - **Affichage de toutes les catégories** : Consulter la liste des catégories disponibles.
 
----
+
 
 ## Gestion des Clients
 
@@ -72,7 +75,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 - **Rapports** :
   - Afficher le nombre de clients inscrits par mois.
 
----
+
 
 ## Structure des Données
 
