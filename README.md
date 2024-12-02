@@ -126,6 +126,5 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 ## Installation
 
 1. **Lien vers mon site web :**
-   ```bash
    http://stage2024.science-conf.net/stage24/ecommerce_web_site_marzouki/
 
