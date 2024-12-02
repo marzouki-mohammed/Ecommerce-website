@@ -125,8 +125,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 
 ## Installation
 
-1. **Cloner le dépôt :**
+1. **Lien vers mon site web :**
    ```bash
-   git clone https://github.com/username/projet-ecommerce-marocain.git
-   cd projet-ecommerce-marocain
+   http://stage2024.science-conf.net/stage24/ecommerce_web_site_marzouki/
 
