@@ -12,7 +12,90 @@ Bienvenue sur le projet de site e-commerce dédié aux produits traditionnels ma
 - **Effectuer des commandes :** Les clients peuvent finaliser leurs achats en passant une commande.
 - **Suivre la commande :** Après avoir passé une commande, les clients peuvent suivre son statut (par exemple, en cours, expédiée, livrée).
 - **Obtenir un ticket :** Les clients peuvent recevoir un ticket ou une confirmation pour leurs commandes, souvent utilisé comme preuve d'achat.
-- 
+  # E-commerce Management System - Fonctionnalités des Administrateurs
+
+Ce document détaille les fonctionnalités disponibles pour les administrateurs dans le système de gestion e-commerce.
+
+---
+
+## Gestion des Admins
+
+- **Ajouter des admins** : Ajouter de nouveaux administrateurs au système.
+- **Supprimer des admins** : Supprimer des administrateurs existants.
+- **Gestion des rôles** :
+  - Ajouter un rôle à un administrateur.
+  - Supprimer un rôle d’un administrateur.
+  - Attribuer un rôle spécifique à un administrateur.
+- **Affichage de tous les admins** : Voir la liste complète des administrateurs.
+
+---
+
+## Gestion des Produits
+
+- **Ajouter des produits** : Ajouter des produits simples ou composés au catalogue.
+- **Supprimer des produits** : Retirer des produits simples ou composés du catalogue.
+- **Ajouter une remise** : Ajouter une promotion ou remise à un produit.
+- **Appliquer une remise** : Appliquer des remises spécifiques à des produits.
+- **Mettre à jour des produits** : Modifier les informations des produits existants (simples ou composés).
+- **Rapports** :
+  - Afficher le top 5 des produits les plus vendus.
+  - Afficher le top des produits populaires du mois.
+- **Affichage de tous les produits** : Voir la liste complète des produits disponibles.
+
+---
+
+## Gestion des Commandes
+
+- **Affichage de toutes les commandes** : Consulter la liste des commandes passées par les clients.
+- **Afficher les détails des commandes** : Accéder aux détails individuels d'une commande.
+- **Gestion des expéditeurs** :
+  - Ajouter de nouveaux expéditeurs.
+  - Supprimer des expéditeurs existants.
+- **Livraison des commandes** : Suivre et gérer les livraisons des commandes.
+
+---
+
+## Gestion des Catégories
+
+- **Ajouter des catégories** : Insérer de nouvelles catégories dans le catalogue.
+- **Supprimer des catégories** : Retirer des catégories existantes.
+- **Mise à jour des catégories** : Modifier les informations des catégories actuelles.
+- **Rapports** :
+  - Distribution des produits par catégorie.
+- **Affichage de toutes les catégories** : Consulter la liste des catégories disponibles.
+
+---
+
+## Gestion des Clients
+
+- **Affichage de tous les clients** : Voir la liste des clients inscrits sur la plateforme.
+- **Rapports** :
+  - Afficher le nombre de clients inscrits par mois.
+
+---
+
+## Structure des Données
+
+### Tables Principales
+- **Admins** : Gestion des administrateurs.
+- **Products** : Informations sur les produits.
+- **Orders** : Détails des commandes passées.
+- **Categories** : Organisation des produits par catégories.
+- **Clients** : Informations sur les clients.
+
+---
+
+## Technologies Utilisées
+
+- **Frontend** : HTML, CSS, JavaScript
+- **Backend** : PHP (avec PDO)
+- **Base de données** : MySQL
+- **Outils de gestion** : GitHub, cPanel
+
+---
+
+
+
 
 - **Page d'accueil attrayante :** Présente les produits les plus populaires et les promotions actuelles.
 - **Catalogue de produits :** Affiche les produits avec des filtres avancés (catégories, prix, couleurs,Nom du produit, etc.).
