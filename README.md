@@ -90,16 +90,18 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 
 ## Technologies Utilisées
 
-- **Frontend :**
+### Frontend
 ![HTML](https://img.shields.io/badge/-HTML-%23E34F26?style=flat-square&logo=html5&logoColor=ffffff)  
 ![CSS](https://img.shields.io/badge/-CSS-%231572B6?style=flat-square&logo=css3&logoColor=ffffff)  
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1E?style=flat-square&logo=javascript&logoColor=000000)  
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-%23563D7C?style=flat-square&logo=bootstrap&logoColor=ffffff)  
 ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
-
-- **Backend** : PHP (avec PDO)
-- **Base de données** : MySQL
-- **Outils de gestion** : GitHub, cPanel
+### Backend :
+PHP (avec PDO)
+### Base de données :
+MySQL
+### Outils de gestion :
+GitHub, cPanel
 
 ---
 
