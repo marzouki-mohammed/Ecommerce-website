@@ -90,23 +90,19 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 
 ## Technologies Utilisées
 
-### Frontend
+### Frontend : 
 ![HTML](https://img.shields.io/badge/-HTML-%23E34F26?style=flat-square&logo=html5&logoColor=ffffff)  
 ![CSS](https://img.shields.io/badge/-CSS-%231572B6?style=flat-square&logo=css3&logoColor=ffffff)  
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1E?style=flat-square&logo=javascript&logoColor=000000)  
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-%23563D7C?style=flat-square&logo=bootstrap&logoColor=ffffff)  
 ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
 ### Backend :
-PHP (avec PDO)
+![PHP](https://img.shields.io/badge/-PHP-%23777BB4?style=flat-square&logo=php&logoColor=ffffff)
 ### Base de données :
-MySQL
-### Outils de gestion :
-GitHub, cPanel
+![MySQL](https://img.shields.io/badge/-MySQL-%234479A1?style=flat-square&logo=mysql&logoColor=ffffff)
+
 
 ---
-
-
-
 
 - **Page d'accueil attrayante :** Présente les produits les plus populaires et les promotions actuelles.
 - **Catalogue de produits :** Affiche les produits avec des filtres avancés (catégories, prix, couleurs,Nom du produit, etc.).
@@ -115,21 +111,6 @@ GitHub, cPanel
 - **Paiement en ligne :** Intégration des paiements sécurisés via des passerelles locales et internationales.
 - **Suivi des commandes :** Les utilisateurs peuvent suivre l'état de leurs commandes.
 - **Gestion de l'administration :** Ajouter des produits, gérer les commandes et analyser les ventes via un tableau de bord.
-
-## Technologies utilisées
-
-- **Frontend :**
-  - HTML5, CSS3, JavaScript (avec Bootstrap pour le design responsive)
-- **Backend :**
-  - PHP (avec PDO pour la gestion des bases de données)
-- **Base de données :**
-  - MySQL
-- **Bibliothèques :**
-  - PHPMailer (pour l'envoi d'e-mails)
-  - FPDF/TCPDF (pour la génération de factures en PDF)
-- **APIs utilisées :**
-  - API d'échange de devises (Exchangerate-API)
-  - Nominatim OpenStreetMap (calcul des frais de livraison)
 
 ## Installation
 
