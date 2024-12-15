@@ -117,7 +117,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 - **Suivi des commandes :** Les utilisateurs peuvent suivre l'état de leurs commandes.
   ![image](https://github.com/user-attachments/assets/d3ecfb7f-b1d1-4c78-a8ae-552c336155fb)
 - **Gestion de l'administration :** Ajouter des produits, gérer les commandes et analyser les ventes via un tableau de bord.
-
+![modified_image (3)](https://github.com/user-attachments/assets/d4314437-9306-4881-b0b3-372b503cf12e)
 ## Installation
 
 1. **Lien vers mon site web :**
