@@ -105,6 +105,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 ---
 
 - **Page d'accueil attrayante :** Présente les produits les plus populaires et les promotions actuelles.
+  
 - **Catalogue de produits :** Affiche les produits avec des filtres avancés (catégories, prix, couleurs,Nom du produit, etc.).
 - **Gestion des comptes :** Inscription, connexion et gestion des profils utilisateurs.
 - **Panier d'achat :** Ajout de produits au panier, mise à jour des quantités et suppression.
@@ -113,7 +114,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 - **Gestion de l'administration :** Ajouter des produits, gérer les commandes et analyser les ventes via un tableau de bord.
 
 ## Installation
-
+![Uploading modified_image.png…]()
 1. **Lien vers mon site web :**
    http://stage2024.science-conf.net/stage24/ecommerce_web_site_marzouki/
 
