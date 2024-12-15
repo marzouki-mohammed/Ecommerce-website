@@ -109,6 +109,7 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 - **Catalogue de produits :** Affiche les produits avec des filtres avancés (catégories, prix, couleurs,Nom du produit, etc.).
   ![modified_image (1)](https://github.com/user-attachments/assets/ca6ec81b-3ef3-4063-9ebe-23dbc97d0136)
 - **Gestion des comptes :** Inscription, connexion et gestion des profils utilisateurs.
+- ![modified_image (2)](https://github.com/user-attachments/assets/cd7b6fb5-3b50-4088-8b17-24399bffcefd)
 - **Panier d'achat :** Ajout de produits au panier, mise à jour des quantités et suppression.
 - **Paiement en ligne :** Intégration des paiements sécurisés via des passerelles locales et internationales.
 - **Suivi des commandes :** Les utilisateurs peuvent suivre l'état de leurs commandes.
