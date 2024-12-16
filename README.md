@@ -120,6 +120,6 @@ Ce document détaille les fonctionnalités disponibles pour les administrateurs 
 ![modified_image (3)](https://github.com/user-attachments/assets/d4314437-9306-4881-b0b3-372b503cf12e)
 ## Installation
 
-1. **Lien vers mon site web :
+1. **Lien vers mon site web :**
    http://stage2024.science-conf.net/stage24/ecommerce_web_site_marzouki/
 
