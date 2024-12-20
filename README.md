@@ -88,8 +88,10 @@ This document details the features available to administrators in the e-commerce
 ### Base de données :
 ![MySQL](https://img.shields.io/badge/-MySQL-%234479A1?style=flat-square&logo=mysql&logoColor=ffffff)
 
+### Database
 
----
+The database is available in the [database](.NaturelleShop/Data_Base/) folder.
+
 
 - **Attractive Home Page:** Showcases the most popular products and current promotions.
   ![modified_image](https://github.com/user-attachments/assets/8678c258-2410-424e-b24e-33c94145d6fa)
