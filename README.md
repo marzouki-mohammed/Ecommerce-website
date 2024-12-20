@@ -90,7 +90,7 @@ This document details the features available to administrators in the e-commerce
 
 ### Database
 
-The database is available in the [database](.NaturelleShop/Data_Base/) folder.
+The database is available in the [database](.NaturelleShop) folder.
 
 
 - **Attractive Home Page:** Showcases the most popular products and current promotions.
