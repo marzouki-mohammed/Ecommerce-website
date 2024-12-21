@@ -1,6 +1,8 @@
 
 /*The e-commerce website database is organized into sections. Each section plays a crucial role in the overall functioning*/
 
+
+
 /*This table manages administrator information (admin name, password, email, etc.).*/
 CREATE TABLE `admin` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
@@ -12,17 +14,27 @@ CREATE TABLE `admin` (
   `updated_at` timestamp NOT NULL DEFAULT 'CURRENT_TIMESTAMP'
 );
 
+
+
+
 /*Contains the different roles that can be assigned to administrators.*/
 CREATE TABLE `role` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(50) UNIQUE NOT NULL
 );
 
+
+
+
+
 /*Ensures the relationship between administrators and their roles, allowing each administrator to have one or more roles.*/
 CREATE TABLE `admin_role` (
   `admin_id` integer NOT NULL,
   `role_id` integer NOT NULL
 );
+
+
+
 
 
 /*Main table for site users, including information like name, email, gender, and active/inactive status.*/
@@ -36,6 +48,9 @@ CREATE TABLE `users` (
   `created_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP),
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
+
+
+
 
 
 
@@ -56,6 +71,9 @@ CREATE TABLE `user_address` (
 );
 
 
+
+
+
 /*Stores user payment information, such as credit cards and expiration dates.*/
 CREATE TABLE `user_payment` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
@@ -70,6 +88,11 @@ CREATE TABLE `user_payment` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Manages product suppliers, with details such as supplier name, contact details and address.*/
 CREATE TABLE `supplier` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `supplier_name` VARCHAR(100),
@@ -83,6 +106,10 @@ CREATE TABLE `supplier` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+/*Manages products available for sale, with information such as price, quantity in stock and active status.*/
 CREATE TABLE `products` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `product_name` VARCHAR(255),
@@ -97,6 +124,10 @@ CREATE TABLE `products` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+/*Organizes products into categories and subcategories for easier navigation on the site.*/
 CREATE TABLE `categories` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(100),
@@ -105,12 +136,20 @@ CREATE TABLE `categories` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+/*Links products to their respective categories, allowing a product to belong to multiple categories.*/
 CREATE TABLE `product_categories` (
   `category_id` INT,
   `product_id` INT,
   PRIMARY KEY (`category_id`, `product_id`)
 );
 
+
+
+
+/*Manages product variants with the ability to enable or disable certain variants.*/
 CREATE TABLE `variant_options` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `title` TEXT,
@@ -120,6 +159,10 @@ CREATE TABLE `variant_options` (
   `active` BOOLEAN DEFAULT true
 );
 
+
+
+
+/*Stores images associated with specific products or variants.*/
 CREATE TABLE `gallery` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `product_variant_id` INT,
@@ -131,6 +174,9 @@ CREATE TABLE `gallery` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+/*Records warehouse information for product storage.*/
 CREATE TABLE `warehouses` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(255),
@@ -139,6 +185,11 @@ CREATE TABLE `warehouses` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Tracking the quantities of products stored in each warehouse.*/
 CREATE TABLE `warehouse_inventory` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `warehouse_id` INT,
@@ -148,6 +199,11 @@ CREATE TABLE `warehouse_inventory` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Manages product components (for example, for a product that is a set of multiple parts).*/
 CREATE TABLE `components` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `component_name` VARCHAR(255) NOT NULL,
@@ -162,6 +218,10 @@ CREATE TABLE `components` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+/*Connect components to products to define item compositions and quantities.*/
 CREATE TABLE `product_composer` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `product_id` INT NOT NULL,
@@ -171,6 +231,11 @@ CREATE TABLE `product_composer` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Stores information about available discount coupons.*/
 CREATE TABLE `coupons` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `code` VARCHAR(50) NOT NULL,
@@ -180,18 +245,27 @@ CREATE TABLE `coupons` (
   `created_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Link coupons to products and components to apply specific discounts.*/
 CREATE TABLE `product_coupons` (
   `product_id` INT NOT NULL,
   `coupon_id` INT NOT NULL,
   PRIMARY KEY (`product_id`, `coupon_id`)
 );
-
 CREATE TABLE `product_composer_coupons` (
   `components_id` INT NOT NULL,
   `coupon_id` INT NOT NULL,
   PRIMARY KEY (`components_id`, `coupon_id`)
 );
 
+
+
+
+
+/*Manages users' shopping carts.*/
 CREATE TABLE `carts` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -199,6 +273,11 @@ CREATE TABLE `carts` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Track items in each cart, including products*/
 CREATE TABLE `cart_items` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `cart_id` INT NOT NULL,
@@ -210,7 +289,6 @@ CREATE TABLE `cart_items` (
   `created_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
-
 CREATE TABLE `cart_items_compo` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `cart_items_id` INT NOT NULL,
@@ -218,6 +296,10 @@ CREATE TABLE `cart_items_compo` (
   `product_variant_id` INT NOT NULL
 );
 
+
+
+
+/*Manages order statuses (e.g. in preparation, shipped).*/
 CREATE TABLE `statuses` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `status_name` VARCHAR(255) NOT NULL,
@@ -226,7 +308,6 @@ CREATE TABLE `statuses` (
   `created_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
-
 CREATE TABLE `order_statuses` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `status_id` INT NOT NULL,
@@ -236,6 +317,10 @@ CREATE TABLE `order_statuses` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+/*Table dédiée au suivi la stocke des produits  commandés avec des contraintes spécifiques. Utiliser pour update les états de commande.*/
 CREATE TABLE `porso_statuses` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `orders_id` INT NOT NULL,
@@ -246,7 +331,6 @@ CREATE TABLE `porso_statuses` (
   `product_variant_id` INT NOT NULL,
   `quantity_obli_var` INT NOT NULL
 );
-
 CREATE TABLE `porso_statuses_comp` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `porso_statuses_id` INT NOT NULL,
@@ -255,6 +339,11 @@ CREATE TABLE `porso_statuses_comp` (
   `quantity_obli_var` INT NOT NULL
 );
 
+
+
+
+
+/*Stores sender information for order delivery.*/
 CREATE TABLE `shippers` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `shipper_name` VARCHAR(45) NOT NULL,
@@ -267,6 +356,11 @@ CREATE TABLE `shippers` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Stores orders placed by users with information such as user, shipping address, and total price.*/
 CREATE TABLE `orders` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -277,6 +371,11 @@ CREATE TABLE `orders` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+
+
+/*Lists the items contained in each order (products and associated components).*/
 CREATE TABLE `order_items` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `order_id` INT NOT NULL,
@@ -288,7 +387,6 @@ CREATE TABLE `order_items` (
   `created_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   `updated_at` TIMESTAMP NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
-
 CREATE TABLE `orders_items_compo` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `orders_items_id` INT NOT NULL,
@@ -297,6 +395,12 @@ CREATE TABLE `orders_items_compo` (
   `quantity` INT NOT NULL
 );
 
+
+
+
+
+
+/*Allows users to leave reviews and ratings on products and their components.*/
 CREATE TABLE `reviews` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT NOT NULL,
