@@ -1,5 +1,7 @@
 
 /*The e-commerce website database is organized into sections. Each section plays a crucial role in the overall functioning*/
+
+/*This table manages administrator information (admin name, password, email, etc.).*/
 CREATE TABLE `admin` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `username` varchar(50) UNIQUE NOT NULL,
@@ -10,16 +12,20 @@ CREATE TABLE `admin` (
   `updated_at` timestamp NOT NULL DEFAULT 'CURRENT_TIMESTAMP'
 );
 
+/*Contains the different roles that can be assigned to administrators.*/
 CREATE TABLE `role` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(50) UNIQUE NOT NULL
 );
 
+/*Ensures the relationship between administrators and their roles, allowing each administrator to have one or more roles.*/
 CREATE TABLE `admin_role` (
   `admin_id` integer NOT NULL,
   `role_id` integer NOT NULL
 );
 
+
+/*Main table for site users, including information like name, email, gender, and active/inactive status.*/
 CREATE TABLE `users` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(100),
@@ -31,6 +37,9 @@ CREATE TABLE `users` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+
+/*Allows you to save multiple addresses for each user, useful for orders and deliveries.*/
 CREATE TABLE `user_address` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT,
@@ -46,6 +55,8 @@ CREATE TABLE `user_address` (
   `updated_at` TIMESTAMP DEFAULT (CURRENT_TIMESTAMP)
 );
 
+
+/*Stores user payment information, such as credit cards and expiration dates.*/
 CREATE TABLE `user_payment` (
   `id` INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT,
