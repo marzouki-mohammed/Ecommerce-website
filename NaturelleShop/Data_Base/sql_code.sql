@@ -1,3 +1,5 @@
+
+/*The e-commerce website database is organized into sections. Each section plays a crucial role in the overall functioning*/
 CREATE TABLE `admin` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `username` varchar(50) UNIQUE NOT NULL,
