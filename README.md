@@ -94,15 +94,15 @@ The database is available in the [database](./NaturelleShop/Data_Base/) folder.
 
 ### Libraries :
 
--PHPMailer: PHP library used for sending emails. It facilitates communication with customers by sending order confirmations and notifications.
--FPDF: PHP library used to generate dynamic PDF documents, such as invoices, thus improving purchasing management.
--QRLib: PHP library used to generate QR codes, integrated into certain features of the site for better interactivity.
+-**PHPMailer:** PHP library used for sending emails. It facilitates communication with customers by sending order confirmations and notifications.
+-**FPDF:** PHP library used to generate dynamic PDF documents, such as invoices, thus improving purchasing management.
+-**QRLib:** PHP library used to generate QR codes, integrated into certain features of the site for better interactivity.
 
 ### APIs :
--Exchangerate-API: Provides real-time exchange rates, allowing users to see prices in different currencies.
--URL : https://api.exchangerate-api.com/v4/latest/USD
--Nominatim OpenStreetMap API: Used to calculate distances between the customer and the delivery location, thus facilitating the management of delivery costs.
--URL : https://nominatim.openstreetmap.org/
+-**Exchangerate-API:** Provides real-time exchange rates, allowing users to see prices in different currencies.
+-**URL :** https://api.exchangerate-api.com/v4/latest/USD
+-**Nominatim OpenStreetMap API:** Used to calculate distances between the customer and the delivery location, thus facilitating the management of delivery costs.
+-**URL :** https://nominatim.openstreetmap.org/
 
 
 - **Attractive Home Page:** Showcases the most popular products and current promotions.
