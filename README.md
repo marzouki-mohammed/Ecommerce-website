@@ -103,8 +103,10 @@ The database is available in the [database](./NaturelleShop/Data_Base/) folder.
 - **URL :** https://api.exchangerate-api.com/v4/latest/USD
 - **Nominatim OpenStreetMap API:** Used to calculate distances between the customer and the delivery location, thus facilitating the management of delivery costs.
 - **URL :** https://nominatim.openstreetmap.org/
+### Gestion des Dépendances :
+Composer est un gestionnaire de dépendances pour PHP qui permet de gérer les bibliothèques et les packages nécessaires au projet.
 
-
+### Site Overview
 - **Attractive Home Page:** Showcases the most popular products and current promotions.
   ![modified_image](https://github.com/user-attachments/assets/8678c258-2410-424e-b24e-33c94145d6fa)
 - **Product Catalog:** Displays products with advanced filters (categories, prices, colors, product name, etc.).
