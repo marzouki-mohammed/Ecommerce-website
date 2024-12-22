@@ -88,9 +88,15 @@ This document details the features available to administrators in the e-commerce
 ### Base de données :
 ![MySQL](https://img.shields.io/badge/-MySQL-%234479A1?style=flat-square&logo=mysql&logoColor=ffffff)
 
-### Database
+### Database :
 
 The database is available in the [database](./NaturelleShop/Data_Base/) folder.
+
+### Libraries :
+
+PHPMailer: PHP library used for sending emails. It facilitates communication with customers by sending order confirmations and notifications.
+FPDF: PHP library used to generate dynamic PDF documents, such as invoices, thus improving purchasing management.
+QRLib: PHP library used to generate QR codes, integrated into certain features of the site for better interactivity.
 
 
 - **Attractive Home Page:** Showcases the most popular products and current promotions.
