@@ -1,4 +1,4 @@
-// main dashboard
+<!-- main dashboard -->
 
 <?php 
     session_start();
