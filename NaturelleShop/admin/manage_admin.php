@@ -1,4 +1,4 @@
-// admin manage dashboard
+<!-- admin manage dashboard -->
 
 <?php 
 session_start();
