@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+@import 'navbar';
+@import 'productImages';
+@import 'lightbox';
+@import 'productInfo';
+@import 'footer';
+@import 'mediaqueries';
+@import 'media575px';
+@import 'medialandscape';
+
+* {
+	box-sizing: border-box;
+}
+
+body { 
+	@include PadMarginZero();
+	background-color: $White;
+	color: $Black;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+// TOAST
+.toast-container {
+	min-width: 50px;
+  background-color: $Orange;
+  color: $White;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  z-index: 5000;
+  right: 30px;
+  top: 60px;
+  font-size: 0.7em;
+	font-weight: bold;
+	visibility: hidden;
+	opacity: 0;
+}
+
+	.toast--visible {
+		top: 60px;
+		opacity: 1;
+		visibility: visible;
+		animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+	@keyframes fadein {
+		from {top: 0; opacity: 0;}
+		to {top: 60px; opacity: 1;}
+	}
+	
+	
+	@keyframes fadeout {
+		from {top: 60px; opacity: 1;}
+		to {top: 0; opacity: 0;}
+	}

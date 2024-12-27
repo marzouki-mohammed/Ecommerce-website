@@ -1,0 +1,152 @@
+@media (max-width: 576px) {  
+
+  .container {
+		overflow-x: hidden;
+    overflow-y: auto;
+	}
+ 
+  .navbar {
+    padding: 10px 5px;
+    height: auto;
+    
+    .navbar-container {
+      border-bottom: none;
+      padding: $ZeroPX;  
+      height: auto;
+      
+      .mobile-nav { 
+        @include FlexCenterAlign(); 
+        
+        .header-img { 
+          padding-bottom: $ZeroPX!important; 
+        }
+      }
+      
+      .navbar-cart { 
+        @include NoPadLeftRight;
+        padding: $ZeroPX;
+
+        .cart-qnty {
+          padding-bottom: $ZeroPX;
+          padding-right: $TenPX;
+        }
+
+        .avatar-logo {
+          padding-bottom: $ZeroPX;
+          padding-right: 5px;
+      
+          .avatar {
+            height: 30px;        
+          }
+        }
+      }
+
+      .navbar-nav { 
+        padding-left: $TenPX; 
+        
+        .nav-link {
+          font-weight: bold;
+          color: $Black;
+          padding: 10px 0;
+          
+          &:hover {
+            color: $Orange;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .producstOnCart {
+    right: 20px;
+    width: 90vw;
+    position: fixed;
+  
+    .top {
+      position: relative;
+      top: 0; 
+    }
+  
+    .cart-body-content {
+      padding: 5px 15px;
+  
+      .cart-product-title {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .product {
+    margin-top: 50px;
+    padding: $ZeroPX;
+    position: relative;
+
+    .product-image-container {
+      @include NoPadLeftRight;
+      width: 100vw;
+      max-width: 100%;
+
+      .product-image { 
+        border-radius: $ZeroPX;
+        cursor: default; 
+      }
+    }
+
+    .previous {
+      left: 3%;
+      
+      &:hover {
+        color: $Orange;
+        left: 2%;
+      }
+    }
+    
+    .next {
+      right: 3%;
+      
+      &:hover {
+        color: $Orange;
+        right: 2%;
+      }
+    }
+    
+    .arrow {
+      position: absolute;
+      top: 25%;
+      transform: translateY(-50%);
+  
+      background-color: $White;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      cursor: pointer;
+  
+      transition: all 0.3s ease;
+    }
+
+    .thumbnail-container { 
+      display: none 
+    }
+
+    .price-container {
+      display: flex;
+      justify-content: space-between;   
+    }
+  }
+  
+  footer {
+    font-size: $MediumEM;
+    position: relative;
+    
+    .footer-text, .footer-links {
+      justify-content: center;
+      padding: 5px;
+    }
+  }
+}

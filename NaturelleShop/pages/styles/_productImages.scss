@@ -1,0 +1,49 @@
+.product {
+  margin-top: 150px;
+  padding: 0 50px;
+  
+  .product-image-container, .col-3 { 
+    padding: 0 10px; 
+    
+    .product-image {
+      border-radius: $TwentyPX;
+      cursor: pointer;
+    }
+  }
+  
+  .arrow {
+    display: none;
+  } 
+  
+  .thumbnail-container {
+    margin-top: $TwentyPX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .thumbnail-image-container {
+      display: flex;
+      height: fit-content;
+      overflow: hidden;
+      border-radius: $TwentyPX;
+      border: 3px solid transparent;
+      
+      img {
+        width: 100%;
+        
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+    
+    .active {
+      border: 3px solid $Orange;
+      
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
